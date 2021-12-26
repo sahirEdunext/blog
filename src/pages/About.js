@@ -1,15 +1,16 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import HeaderInnerHeadComponent from './HeaderInnerPage'
-import FooterComponent from './Footer'
+
 const AboutComponent = () => {
     {
         return (
             <>
                
                 {/* Inner page header Common Start*/}
-            <HeaderInnerHeadComponent/>
+            
             {/* Inner page header Common End */}
+
+
                 <ol className="breadcrumb">
                     <li className="breadcrumb-item">
                         <Link to="/">Home</Link>
@@ -302,7 +303,7 @@ const AboutComponent = () => {
                 {/* <!-- brands --> */}
 
                 {/* Common footer Start */}
-                <FooterComponent/>
+               
                 {/* Common footer End */}
                
             </>

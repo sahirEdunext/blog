@@ -1,13 +1,8 @@
 import React from 'react'
 import NavBarComponent from './NavBar'
-import HeaderInnerHeadComponent from './HeaderInnerPage'
-import FooterComponent from './Footer'
 const ShopComponent = () => {
     return (
         <>      
-        {/* Inner page header Common Start*/}
-        <HeaderInnerHeadComponent/>
-            {/* Inner page header Common End */}
             
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
@@ -441,9 +436,6 @@ const ShopComponent = () => {
                     </div>
                 </div>
             </section>
-            {/* Common footer Start */}
-            <FooterComponent/>
-                {/* Common footer End */}
           
         </>
     )

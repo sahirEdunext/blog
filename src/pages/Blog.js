@@ -1,12 +1,8 @@
 import React from 'react'
-import HeaderInnerHeadComponent from './HeaderInnerPage'
-import FooterComponent from './Footer'
 const BlogComponent = () => {
     return (
         <>
-            {/* Inner page header Common Start*/}
-            <HeaderInnerHeadComponent/>
-            {/* Inner page header Common End */}
+           
             <ol className="breadcrumb">
                 <li className="breadcrumb-item">
                     <a href="index.html">Home</a>
@@ -157,9 +153,7 @@ const BlogComponent = () => {
                 </div>
             </section>
             
-        {/* Common footer Start */}
-        <FooterComponent/>
-                {/* Common footer End */}
+        
         </>
     )
 }

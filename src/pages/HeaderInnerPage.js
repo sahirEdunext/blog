@@ -6,7 +6,8 @@ const HeaderInnerHeadComponent =()=>{
             <div className="main-banner inner" id="home">
                 <header className="header">
                     <div className="container-fluid px-lg-5">
-                        <NavBarComponent/>     
+                        <NavBarComponent/>   
+                        {/* {alert("Header call")}   */}
                     </div>
                 </header>
             
