@@ -1,4 +1,4 @@
-import react from 'react'
+import react, {useEffect, useState} from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import HomeComponent from './Home'
 import AboutComponent from './About'
@@ -7,11 +7,21 @@ import ShopComponent from './Shop'
 import ContactComponent from './Contact'
 import HeaderInnerHeadComponent from './HeaderInnerPage'
 import FooterComponent from './Footer'
-const RouterPageComponent =()=>{
+const RouterPageComponent =(props)=>{
+    //var navigate = useNavigate();
+    //console.log("navigate:",navigate);
+    const [isHomePage, SetIsHomePage]=useState(true);
+    //const currentPath=window.location.href
+    useEffect(() => {
+        if(window.location.href =="http://localhost:3000/"){
+            SetIsHomePage(false);
+        }
+    }, [isHomePage])
+    //console.log(currentPath)
     return(
         <>
         <Router>
-            <HeaderInnerHeadComponent/>
+            {isHomePage ? <HeaderInnerHeadComponent/> : ""}
             <Routes>
                 <Route path="/" element={<HomeComponent/>}/>
                 <Route path="/About" element={<AboutComponent/>} />

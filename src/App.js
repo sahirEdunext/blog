@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import RouterPageComponent from './pages/RouterPage';
-function App() {
+function App(props) {
+  //console.log(props);
   return (
       <>
-      <RouterPageComponent/>
+      <RouterPageComponent path={props}/>
       </>
   );
 }
